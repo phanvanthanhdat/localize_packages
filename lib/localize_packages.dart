@@ -13,6 +13,7 @@ class FlutterLocalizePackage {
       {String url, String name}) async {
     return await Navigator.of(context, rootNavigator: true).push(
       MaterialPageRoute(
+          maintainState: false,
         builder: (context) => MyApp1(),
       ),
     );
